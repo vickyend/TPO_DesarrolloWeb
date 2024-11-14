@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    
+
+    <!-- 1. Selectores Básicos
+
+        Selector de tipo (Type Selector): Selecciona todos los elementos de un tipo específico.
+        Ejemplo: p { color: red; } (Selecciona todos los elementos <p>).
+        
+        Selector de clase (Class Selector): Selecciona todos los elementos que tienen una clase específica.
+        Ejemplo: .miClase { background-color: blue; } (Selecciona todos los elementos con clase "miClase").
+        
+        Selector de ID (ID Selector): Selecciona un elemento único que tiene un ID específico.
+        Ejemplo: #miID { font-size: 20px; } (Selecciona el elemento con ID "miID").
+
+        Selector universal (Universal Selector): Selecciona todos los elementos.
+        Ejemplo: * { margin: 0; } (Selecciona todos los elementos y elimina el margen).
+        
+     
+    2. Selectores Combinadores
+        Selector descendente (Descendant Selector): Selecciona todos los elementos que son descendientes de un elemento específico.
+        Ejemplo: div p { color: green; } (Selecciona todos los <p> que están dentro de un <div>).
+              
+        Selector hijo (Child Selector): Selecciona todos los elementos que son hijos directos de un elemento específico.
+        Ejemplo: div > p { color: blue; } (Selecciona todos los <p> que son hijos directos de un <div>). -->
+
+
+    <table>
+        <tr>
+            <th  class="titulo">Título</td>
+            <td id="info1" class="info">Data1</td>
+            <td id="info2">Data 2
+                <table>
+                <tr>
+                    <td>Data 3</td>
+                </tr>
+
+            </table></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
+
+    <!-- CSS INTERNO
+
+    <style>
+        table {
+            background-color: red;
+        }
+
+    .titulo {
+        background-color: blue;
+    }
+
+    #info1 {
+        background-color: green;
+    }
+
+    td {    
+        background-color: yellow;
+    }
+
+    td table tr td   {
+    background-color: pink;
+        }
+    </style> -->
+
+    <!-- CSS EXTERNO
+    
+    <link rel="stylesheet" href="#">
+    
+    -->

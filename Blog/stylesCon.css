@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ad67ea;
+    font-size: larger;
+    font-weight: 600;
+    font-family: "Dosis", serif;
+}
+
+nav ul li a:hover {
+    color: #CA96E1;
+}
+
+/* Consejos */
+.consejos {
+    margin: 40px 0;
+}
+
+.consejos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.consejo {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.consejo:hover {
+    transform: scale(1.05);
+    background: #CFA0E4;
+}
+
+.consejo h3 {
+    margin: 10px 0;
+}
+
+.consejo p {
+    margin: 5px 0 0;
+}
+
+h1 {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+main {
+    flex-grow: 1; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ca77ebb6;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Formulario_Back.jpg); 
+    background-size: cover;           
+    background-position: center center;
+    background-attachment: fixed;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;                   
+    padding: 10px;                     
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 15px;                           
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;                        
+    text-align: center;                       
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #824DB0;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #B973D7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #9D5ED5;
+}
+
+input, textarea, select {
+    padding: 8px;         
+    font-size: 12px;     
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    font-size: 12px; 
+    margin: 3px 0;  
+    color: #333;
+}
+
+button {
+    padding: 8px;             
+    font-size: 14px;         
+    background-color: #AD67EA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

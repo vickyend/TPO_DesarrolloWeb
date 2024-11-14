@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    height: 100vh;           
+    margin: 0;            
+    background-color: #ffccf2;
+}
+
+.cuadrado {
+    width: 100px; 
+    height: 100px; 
+    background-color: #ff69b4; 
+    transition: background-color 2s ease, transform 0.5s ease;
+    position: relative;
+    margin: 10px;
+    animation: mover 2s linear infinite alternate;
+}
+
+.cuadrado:hover {
+    background-color: #8a2be2;
+    transform: scale(1.5);
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(10);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.volver-link {
+    display: flex;    
+    justify-content: center;  
+    align-items: center;     
+    text-decoration: none;   
+    margin: 0;           
+    position: absolute;   
+    bottom: 50px;                
+}
+
+.volver-link h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    font-size: 20px;
+}

@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 55px;
+    display: flex;
+    flex-direction: column; /* Esto organiza los elementos de manera vertical */
+    justify-content: flex-start; /* Alinea los elementos al principio de la pantalla */
+    align-items: center; /* Centra el contenedor */
+    background-color: #f0f0f0;
+}
+
+.container {
+    border: 2px solid #73ba9b;
+    padding: 20px;
+    width: 900px;
+    height: 500px;
+    background-color: #fff;
+    margin-bottom: 20px; /* Asegura que haya espacio debajo del contenedor */
+}
+
+.triangulo {
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 300px;
+    top: 150px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 250px solid #003e1f;
+}
+
+.tronco {
+    width: 30px;
+    height: 40px;
+    background-color: #8B4513;
+    position: relative;
+    bottom: -150px;
+    left: 435px;
+}
+
+.circulo1, .circulo2, .circulo3, .circulo4, .circulo5 {
+    width: 20px;
+    height: 20px;
+    background-color: #d90429;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circulo1 {
+    margin: 50px auto;
+    left: 40px;
+}
+
+.circulo2 {
+    margin: 50px auto;
+    top: -100px;
+    left: 1px;
+}
+
+.circulo3 {
+    margin: 50px auto;
+    left: 60px;
+    top: -200px;
+}
+
+.circulo4 {
+    margin: 50px auto;
+    left: -25px;
+    top: -420px;
+}
+
+.circulo5 {
+    margin: 50px auto;
+    left: -55px;
+    top: -440px;
+}
+
+.cuadrado1, .cuadrado2, .cuadrado3, .cuadrado4 {
+    background-color: #d5f2e3;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.cuadrado1 {
+    top: -200px;
+    left: 350px;
+}
+
+.cuadrado2 {
+    top: -200px;
+    left: 420px;
+}
+
+.cuadrado3 {
+    top: -250px;
+    left: 520px;
+}
+
+.cuadrado4 {
+    top: -380px;
+    left: 460px;
+}
+
+.volver-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.volver-link h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}

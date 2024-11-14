@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="stylesRestaurante.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Deja tus comentarios</h2>
+        <h4>Ayuda a otros usuarios a elegir el lugar donde van a cenar!</h4>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+            <label for="comentario">¿Sobre qué deseas comentar?</label>
+            <select id="comentario" name="comentario" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="comida">Comida</option>
+                <option value="atencion">Atención</option>
+                <option value="ambiente">Ambiente</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required placeholder="Escribe una descripción"></textarea>
+
+            <label>¿Hace cuánto fuiste?</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="tiempo" value="una semana" required> Hace una semana
+                </label>
+                <label>
+                    <input type="radio" name="tiempo" value="un mes"> Hace un mes
+                </label>
+                <label>
+                    <input type="radio" name="tiempo" value="seis meses"> Hace seis meses
+                </label>
+                <label>
+                    <input type="radio" name="tiempo" value="un año"> Hace un año
+                </label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

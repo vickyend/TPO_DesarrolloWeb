@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>Prueba de Tipografías</title>
+</head>
+
+<body style="margin-left: 20px; width: 90%; background-color: #ffe5ec;">
+    <h1 style="font-family: SUSE, sans-serif; color: #8f2241;">Encabezado Principal</h1>
+    <h2 style="font-family: Raleway, sans-serif; color: #c9184a;">Título secundario</h2><br>
+    <p style="font-family: Prompt, sans-serif; color: #ff4d6d;">Este es un párrafo de prueba para evaluar cómo se ve la tipografía en un bloque de texto. Puedes cambiar la fuente para ver el efecto.<br><br>
+    Otro párrafo de ejemplo con el mismo propósito. La elección de la tipografía puede afectar la legibilidad y la percepción del contenido.</p>
+
+    <!-- Web Safe Fonts
+
+    Atajo: Seleccionar fuente -> Ctrl+C -> Ctrl+Z -> Ctrl+V -> Ctrl+S
+
+    Arial, Helvetica, sans-serif;
+    Verdana, Geneva, sans-serif;
+    Tahoma, Geneva, sans-serif;
+    Trebuchet MS, Helvetica, sans-serif;
+    Impact, Charcoal, sans-serif;
+    Lucida Sans Unicode, Lucida Grande, sans-serif;
+
+    Times New Roman, Times, serif;
+    Georgia, serif;
+    Garamond, serif;
+    Palatino Linotype, Book Antiqua, Palatino, serif;
+
+    Courier New, Courier, monospace;
+
+    Brush Script MT, cursive; 
+    
+    -->
+
+
+<!-- Script para ver el valor de las propiedades CSS de un elemento -->
+<script>
+    // Selecciona el primer h1, h2 y p
+    var h1 = document.querySelector('h1');
+    var h2 = document.querySelector('h2');
+    var h3 = document.querySelector('h3');
+    var h4 = document.querySelector('h4');
+    var h5 = document.querySelector('h5');
+    var h6 = document.querySelector('h6');
+    var p = document.querySelector('p');
+    var span = document.querySelector('span');
+    var a = document.querySelector('a');
+
+    // Función para mostrar los estilos de un elemento
+    function showStyle(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            console.log("El tamaño de fuente del " + element.tagName + " es " + style.fontSize +
+            " ; el tipo de fuente es " + style.fontFamily +
+            " ; el color de texto es " + style.color +
+            " ; el grosor de texto es " + style.fontWeight +
+            " ; la opacidad es " + style.opacity);
+        }
+    }
+
+    // Mostrar estilos de h1, h2 y p
+    showStyle(h1);
+    showStyle(h2);
+    showStyle(h3);
+    showStyle(h4);
+    showStyle(h5);
+    showStyle(h6);
+    showStyle(p);
+    showStyle(span);
+    showStyle(a);
+</script>
+
+</body>
+</html>

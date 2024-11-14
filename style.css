@@ -1,0 +1,110 @@
+body {
+    background-image: url(imgs/fondo.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.circulo {
+    width: 150px; 
+    height: 150px; 
+    background-color: white; 
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
+    position: absolute; 
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nombre {
+    color: white;
+    text-align: center;
+    font-family: "Jost", system-ui;
+    font-size: 25px;
+    margin-top: 185px; 
+    margin-bottom: 5px; 
+}
+
+.estudiando {
+    color: white;
+    text-align: center;
+    font-family: "Jost", system-ui;
+    font-weight: 300;
+    margin-top: 0; 
+}
+
+.rectangulo1 {
+    margin-top: 40px;
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.rectangulo1:hover {
+    transform: scale(1.1);
+}
+
+.rectangulo1 a {
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+.rectangulo2 {
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.rectangulo2:hover {
+    transform: scale(1.1);
+}
+
+.rectangulo2 a {
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+
+.rectangulo3 {
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.rectangulo3:hover {
+    transform: scale(1.1);
+}
+
+.rectangulo3 a {
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
