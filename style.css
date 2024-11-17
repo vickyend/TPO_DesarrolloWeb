@@ -1,31 +1,35 @@
 body {
     background-image: url(imgs/fondo.svg);
+    background-position: center center; 
+    background-size: cover; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    justify-content: center; 
     height: 100vh; 
     margin: 0;
+    position: relative;
 }
 
 .circulo {
-    width: 150px; 
-    height: 150px; 
+    width: 170px; 
+    height: 170px; 
     background-color: white; 
     border-radius: 50%; 
     border: 2px solid #ccc; 
-    position: absolute; 
-    top: 20px; 
-    left: 50%;
-    transform: translateX(-50%);
+    background-image: url('imgs/Imag_ia.png'); 
+    background-size: cover; 
+    background-position: center; 
+    margin-bottom: 15px; 
+    align-self: center; 
 }
 
 .nombre {
     color: white;
     text-align: center;
     font-family: "Jost", system-ui;
-    font-size: 25px;
-    margin-top: 185px; 
-    margin-bottom: 5px; 
+    font-size: 32px;
+    margin: 0;
 }
 
 .estudiando {
@@ -36,75 +40,89 @@ body {
     margin-top: 0; 
 }
 
-.rectangulo1 {
-    margin-top: 40px;
-    width: 500px;
-    height: 40px;
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    text-align: center;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: transform 0.3s ease;
-}
-
-.rectangulo1:hover {
-    transform: scale(1.1);
-}
-
-.rectangulo1 a {
-    color: rgb(0, 0, 0);
-    text-decoration:none;
-}
-
-.rectangulo2 {
+.rectangulo1, .rectangulo2, .rectangulo3 {
     margin-top: 20px;
     width: 500px;
     height: 40px;
     background-color: white;
     border: 2px solid #ccc;
     border-radius: 20px;
-    text-align: center;
-    display: flex; 
-    justify-content: center;
+    display: flex;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     transition: transform 0.3s ease;
+    position: relative;
+    padding-left: 15px;
 }
 
-.rectangulo2:hover {
+.rectangulo1:hover, .rectangulo2:hover, .rectangulo3:hover {
     transform: scale(1.1);
 }
 
-.rectangulo2 a {
+.rectangulo1 a, .rectangulo2 a, .rectangulo3 a {
     color: rgb(0, 0, 0);
-    text-decoration:none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
-
-.rectangulo3 {
-    margin-top: 20px;
-    width: 500px;
-    height: 40px;
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    text-align: center; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: transform 0.3s ease;
+.rectangulo1 img, .rectangulo2 img, .rectangulo3 img {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    left: 15px;
 }
 
-.rectangulo3:hover {
-    transform: scale(1.1);
+.rectangulo1 a span, .rectangulo2 a span, .rectangulo3 a span {
+    display: block;
+    text-align: center;
+    width: 100%; 
 }
 
-.rectangulo3 a {
-    color: rgb(0, 0, 0);
-    text-decoration:none;
+@media (max-width: 768px) {
+    .circulo {
+        width: 120px; 
+        height: 120px; 
+    }
+
+    .nombre {
+        font-size: 24px;
+    }
+
+    .rectangulo1, .rectangulo2, .rectangulo3 {
+        width: 90%; 
+        margin-top: 15px;
+        font-size: 16px; 
+    }
+
+    .rectangulo1 img, .rectangulo2 img, .rectangulo3 img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circulo {
+        width: 100px;
+        height: 100px; 
+    }
+
+    .nombre {
+        font-size: 20px;
+    }
+
+    .rectangulo1, .rectangulo2, .rectangulo3 {
+        width: 85%; 
+        margin-top: 10px;
+        font-size: 14px; 
+    }
+
+    .rectangulo1 img, .rectangulo2 img, .rectangulo3 img {
+        width: 16px;
+        height: 16px;
+    }
 }

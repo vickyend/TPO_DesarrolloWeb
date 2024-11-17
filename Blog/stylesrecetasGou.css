@@ -79,7 +79,7 @@ main {
 .receta-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .receta-card h3 {
@@ -112,4 +112,70 @@ footer {
     background: #ca77ebb6;
     margin-top: 20px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .recetas-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .receta-card img {
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .recetas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .receta-card img {
+        height: 160px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .recetas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .receta-card img {
+        height: 140px;
+    }
+
 }

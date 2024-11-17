@@ -10,8 +10,8 @@ body {
     flex-direction: column;
     padding: 0 20px;
     background-color: #f4f4f4;
+    font-family: 'Nunito', sans-serif;
 }
-
 
 header {
     background: #fff;
@@ -44,14 +44,13 @@ nav ul li a:hover {
     color: #CA96E1;
 }
 
-/* Consejos */
 .consejos {
     margin: 40px 0;
 }
 
 .consejos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding-top: 20px;
 }
@@ -79,35 +78,30 @@ nav ul li a:hover {
 
 h1 {
     font-family: "Playwrite GB S", cursive;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
 h2 {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
 }
 
 h3 {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
 p {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-
 main {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 footer {
@@ -115,10 +109,54 @@ footer {
     padding: 10px;
     background: #ca77ebb6;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    position: relative; 
+    position: relative;
     bottom: 0;
     width: 100%;
     margin-top: auto;
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .consejos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .consejo {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .consejo h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
 
